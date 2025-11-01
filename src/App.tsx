@@ -10,6 +10,7 @@ import Home from "./pages/Dashboard/Home";
 import DashboardCursos from "./pages/Dashboard/cursos/DashboardCursos";
 import SettingsPage from "./pages/Dashboard/SettingsPage";
 import CategoriasPage from "./pages/Dashboard/categorias/CategoriasPage";
+import DashBoards from "./pages/Dashboard/DashBoards";
 
 // Lazy imports (code splitting)
 const SignIn = React.lazy(() => import("./pages/AuthPages/SignIn"));
@@ -57,7 +58,7 @@ export default function App() {
 
             {/* Others Page */}
             <Route path="/dashboard">
-              <Route index element={<DashboardCursos />} />
+              <Route index element={<DashBoards />} />
               <Route path="profile/:id" element={<UserProfiles />} />
             </Route>
 
