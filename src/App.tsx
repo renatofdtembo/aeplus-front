@@ -11,6 +11,8 @@ import DashboardCursos from "./pages/Dashboard/cursos/DashboardCursos";
 import SettingsPage from "./pages/Dashboard/SettingsPage";
 import CategoriasPage from "./pages/Dashboard/categorias/CategoriasPage";
 import DashBoards from "./pages/Dashboard/DashBoards";
+import MeusCursos from "./pages/Dashboard/cursos/MeusCursos";
+import DetalheCurso from "./pages/Dashboard/cursos/DetalheCurso";
 
 // Lazy imports (code splitting)
 const SignIn = React.lazy(() => import("./pages/AuthPages/SignIn"));
@@ -62,19 +64,9 @@ export default function App() {
               <Route path="profile/:id" element={<UserProfiles />} />
             </Route>
 
-            <Route path="/vendas">
-              <Route index element={<Navigate to="clientes" replace />} />
-              {/* <Route path="funcionarios" element={<FuncionarioManager />} /> */}
-              <Route path="clientes" element={<EntidadeManager />} />
-              <Route path="clientes/view/:id" element={<ViewEntidade />} />
-            </Route>
-
-            <Route path="/rh">
-              <Route index element={<Navigate to="funcionarios" replace />} />
-              <Route path="funcionarios" element={<FuncionarioManager />} />
-              <Route path="funcionarios/view/:id" element={<ViewEntidade />} />
-            </Route>
-
+            <Route path="meus-cursos" element={<MeusCursos />} />
+            <Route path="detalhe-curso/:curso_id" element={<DetalheCurso />} />
+            
             <Route path="configuracoes" element={<SettingsPage />} />
             {/* <Route path="/configuracoes/usuarios" element={<GerirUsuarios />} /> */}
             <Route path="/configuracoes/categorias" element={<CategoriasPage />} />
