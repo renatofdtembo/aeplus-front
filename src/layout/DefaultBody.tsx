@@ -94,7 +94,7 @@ const DefaultBody: React.FC<DefaultBodyProps> = ({
                     <div className="flex flex-row gap-2 items-center">
                         {/* Ícone sempre visível */}
                         <img
-                            src="/assets/rtec/rtec.png"
+                            src="/assets/defaultcourse.png"
                             alt="logo"
                             className="w-12 h-12 rounded-full"
                         />
@@ -103,7 +103,7 @@ const DefaultBody: React.FC<DefaultBodyProps> = ({
                             to="/"
                             className="text-blue-600 font-bold text-2xl hidden md:block whitespace-nowrap"
                         >
-                            Easy Manager
+                            Angola Educa Mas
                         </Link>
                     </div>
 
@@ -162,7 +162,7 @@ const DefaultBody: React.FC<DefaultBodyProps> = ({
 
                         {/* Coluna 1: Logo e texto */}
                         <div className="col-span-2">
-                            <h2 className="text-xl font-bold text-blue-600 mb-2">Easy Manager</h2>
+                            <h2 className="text-xl font-bold text-blue-600 mb-2">Angola Educa Mas</h2>
                             <p className="text-gray-700">
                                 A nossa instituição têm capacitado os alunos de diversas maneiras. Ouça diretamente de nossos alunos sobre como os cursos os impactaram.
                             </p>
@@ -220,7 +220,7 @@ const DefaultBody: React.FC<DefaultBodyProps> = ({
 
                     {/* Copyright */}
                     <div className={`mt-${showFooter ? "5" : "3"} mb-${showFooter ? "5" : "3"} text-center text-sm text-gray-500`}>
-                        Copyright © 2025 Easy Manager
+                        Copyright © 2025 Angola Educa Mas
                     </div>
                 </div>
             </footer>
