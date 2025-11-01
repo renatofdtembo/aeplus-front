@@ -55,7 +55,7 @@ export default function App() {
               <Route index path="logs" element={<LogsManager />} />
             </Route>
 
-            <Route path="/calendar" element={<Calendar />} />
+            <Route path="/calendario" element={<Calendar />} />
             <Route path="/blank" element={<Blank />} />
 
             {/* Charts */}
